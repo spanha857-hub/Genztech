@@ -1,0 +1,172 @@
+/* header */
+.header {
+    display: flex;
+    border: none;
+    background-color: black;
+    /* ប្រើសម្រាប់ដាក់គម្លាត់អក្សចេញពីរគ្នា */
+    justify-content: space-between;
+
+}
+
+.header .card {
+    /* ប្រើសម្រាប់ដោះប្រអប់ចេញ */
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+
+}
+
+.header .card h3 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.header .card h3 i {
+    /* ប្រើសម្រាប់រំកិលអក្សចេញខាងក្នុង */
+    padding: 5px;
+}
+.header .card h3  a i{
+    color: white;
+     text-decoration: none;
+}
+
+/* container */
+.container{
+    background-color: whitesmoke;
+    /* ប្រើសម្រាប់រំកិលអក្សរទៅខាងស្ដាំ */
+    display: flex;
+    /* ប្រើសម្រាប់រំកិល objectទាំងមកកណ្ដាល */
+    align-items: center;
+    /* ប្រើសម្រាប់ដាក់គម្លាត់logoនិងអក្សរអោយឆ្ងាយពីរគ្នា */
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px black;
+    margin-top: 5px;
+}
+.container.logo {
+    width: 30%;
+}
+.logo img{
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+}
+/* menu */
+.menu-icon{
+    margin-right: 10px;
+    cursor: pointer;
+    display: none; 
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.menu li a:hover{
+    background-color: orange;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.menu li a i {
+    margin-right: 8px;
+    font-size: 15px;
+    color: gray;
+}
+
+/* banner */
+.carousel-item img{
+    margin-top: 10px;
+}
+/* .banner{
+    width: 100%;
+    margin-top: 10px;
+}
+.banner img{
+    width: 50%;
+    height: 50%;
+    margin-left: 350px;
+} */
+
+/* laptop */
+.laptop{
+    display: flex;
+    width: 90.5%;
+    margin-left: 80px;
+}
+
+.laptop .card {
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.laptop .card img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.laptop .card p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.laptop .card:hover {
+    border: 1px solid blue;
+}
+footer {
+    background-color: #212529; /* Dark Gray */
+    color:red;
+    padding: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     width: 100%;
+    clear: both;
+    display: block;
+}
+
+footer a:hover {
+    color: #ffc107; /* Warning yellow on hover */
+    transition: 0.3s;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* screen for respon */
+/* @media screen and (max-width:768px) {
+    .menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 94%;
+        background-color: white;
+        z-index: 1;
+        flex-direction: column;
+        padding: 2px;
+    }
+    .menu-icon{
+        display: block;
+
+    }
+    .menu.active{
+        display: flex;
+    }
+} */
