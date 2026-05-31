@@ -35,40 +35,24 @@
     align-items: center;
     /* ប្រើសម្រាប់ដាក់គម្លាត់logoនិងអក្សរអោយឆ្ងាយពីរគ្នា */
     justify-content: space-between;
-    width: 200px;
+    width: 100%;
     box-shadow: 0px 0px 8px 0px black;
     margin-top: 5px;
 }
-.container.logo {
-    width: 30%;
-}
-.logo img{
-    width: 30%;
-    border-radius: 10px;
-    padding: 5px;
-}
-/* menu */
-
-.menu-icon{
-    margin-right: 10px;
-    cursor: pointer;
-    display: none; 
-}
-.menu {
+/* meun */
+.menu{
     list-style: none;
     display: flex;
-    gap: 25px;
-    padding: 10px;
-    
-}
+    gap: 20px;
+    padding: 8px;
+    margin-top: 15px;
 
-.menu a {
+}
+.menu a{
     text-decoration: none;
-    font-size: 18px;
-    margin: 20px;
-   
+    font-size: 17px;
+    margin-bottom: 30px;
 }
-
 .menu li a:hover{
     background-color: orange;
     width: 100%;
@@ -76,93 +60,102 @@
     border-radius: 5px;
     color: white;
 }
-.menu li a i {
-    margin-right: 8px;
+.menu li a i{
+    margin-left: 50px;
+    align-items: flex-end;
     font-size: 15px;
-    color: gray;
+    gap: 10px;
+    justify-content: space-between;
+    color: rgb(83, 80, 80);
 }
-
-.row row-cols-1 row-cols-md-3 g-4 img{
-  width: 20%;
-  height: 20%;
+/* banner */
+.banner img{
+    width: 100%;
+    margin-top: 10px;
+    /* margin-left: 100px; */
 }
-.btn btn-primaryv {
-
-    margin-left: 35%;
-    font-style: oblique;
-    text-align: center;
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.menu-icon{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.title{
+    margin-top: 25px;
+    padding: 10px;
+}
+/* .product */
+.product{
     display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    width: 100%;
 }
-hr{
-    align-items: baseline;  
-}
-.card-body a{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    
-}
-/* category */
-.category {
-    display: flex;
-    width: 100px;
-    margin-left: 180px;
-    align-items: center;
-    
-}
-
-.category .card1 {
+.product .card{
     flex-wrap: wrap;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    width: 650px;
-    height: 190px;
-    border-radius: 10px;
-
+    margin: 2px;
 }
-
-.category .card1 img {
-    width: 150px;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 10px;
+.card img{
+    width: 195px;
+    height: 210px;
+    margin-left: 40px;
+    border-radius: 5px;
 }
-
-.category .card1 p {
+.card p{
+    text-align: center;
+} 
+.card h1{
+    color: cadetblue;
     text-align: center;
 }
+.card h6{
+    text-align: center;
+    padding: 5px;
+}
+.card .icon{
+    color: gold;
+    text-align: center;
+    margin-top: 8px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+.card .fav{
+    color: red;
+    text-align: end;
+    top: 13px;
+    right: 5px;
+    position: absolute;
+}
+.category{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    gap: 25px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.map-section h2{
+    text-align: center;
+    padding: 30px;
+    margin-top: 200px;
+}
+.map-section iframe{
+    margin-left: 40px;
+}
 
-.category .card1:hover {
-    border: 1px solid blue;
-}
-.category .card1 a{
-    margin-top: auto;
-    flex-wrap: wrap;
-}
-footer {
-    background-color: #212529; /* Dark Gray */
-    color:red;
-    padding: 40px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     width: 100%;
-    clear: both;
-    display: block;
-}
-
-footer a:hover {
-    color: #ffc107; /* Warning yellow on hover */
-    transition: 0.3s;
-}
-
-hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-/* screen for respon */
-@media screen and (max-width:768px) {
+/* screen for responsive for moblie */
+@media screen and (max-width: 786px) {
     .menu{
         display: none;
         position: absolute;
@@ -176,9 +169,12 @@ hr {
     }
     .menu-icon{
         display: block;
-
     }
     .menu.active{
         display: flex;
     }
 }
+
+
+
+
